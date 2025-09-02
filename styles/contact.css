@@ -1,0 +1,160 @@
+.container {
+    background-image: url("../images/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    background-color: var(--trans);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+form {
+    flex-direction: column;
+    padding: 50px 100px;
+    max-width: 600px;
+    border-radius: 30px;
+    margin: 30px auto;
+    background-color: var(--main);
+}
+
+form h1 {
+    margin-bottom: 30px;
+    color: var(--sub);
+}
+
+form input {
+    padding: 10px 15px;
+    margin: 10px;
+    width: 100%;
+    border: none;
+    color: var(--sub);
+    border-bottom: 1px solid var(--sub);
+    border-radius: 30px;
+}
+
+form textarea {
+    padding: 10px 15px;
+    margin: 10px;
+    height: 200px;
+    resize: none;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--sub);
+}
+
+form button {
+    background-color: var(--main);
+    color: var(--sub);
+    border: 2px solid var(--sub);
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+form button:hover {
+    background-color: var(--sub);
+    color: var(--main);
+}
+
+
+/* .main {
+    margin: 10px;
+    padding: 50px;
+    background-color: var(--main);
+    width: 60%;
+}
+
+.main .tools {
+    display: flex;
+    gap: 7px;
+}
+
+.tools .tool {
+    display: grid;
+    gap: 7px;
+}
+
+ button {
+    width: 120px;
+    padding: 10px;
+    font-size: 18px;
+    color: var(--main);
+    background-color: var(--sub);
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px;
+    border-radius: 5px;
+}
+
+ button:hover {
+    cursor: pointer;
+    transform: scaleY(1.1);
+    ;
+}
+
+.tools .tool {
+    width: 100%;
+}
+
+.tools .tool textarea {
+    font-size: 18px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 3px solid var(--sub);
+    outline: none;
+    padding: 2px;
+     box-shadow: 0 0 8px #00000088;
+     border: 1px solid var(--sub); 
+     border-radius:6px; 
+    color: var(--sub);
+    background-color: var(--main);
+    color: var(--sub);
+    border-top: none;
+    margin-left: 5px;
+    margin-top: 15px;
+    resize: none;
+    width: 100%;
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    color: var(--sub);
+}
+
+label {
+    color: var(--sub);
+}
+
+.tools .tool input {
+    padding: 6px;
+    font-size: 18px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 3px solid var(--sub);
+    outline: none;
+     border: 1px solid var(--sub); 
+     border-radius:6px; 
+     box-shadow: 0 0 8px #00000088;
+    background-color: var(--main);
+    color: var(--sub);
+    border-top: none;
+    margin: 15px 5px;
+} */

@@ -1,0 +1,187 @@
+.main {
+    background-color: var(--sub);
+}
+
+.container .text h2 {
+    font-size: 36px;
+}
+
+.container .text h1 {
+    font-size: 44px;
+    margin: 12px 0;
+}
+
+.container .text h3 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.text {
+    color: var(--main);
+}
+
+.links a {
+    color: var(--main);
+    font-size: 22px;
+    padding: 0 12px;
+}
+footer .links a{
+    font-size: 14px;
+}
+.projects {
+    background-color: var(--sub);
+    position: relative;
+}
+
+.projects .project {
+    color: var(--main);
+}
+
+.projects h2 {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 70px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 30px;
+    padding: 5px 10px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.projects .project img {
+    width: 350px;
+    height: 350px;
+}
+
+.serves {
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    background-color: var(--main);
+    color: var(--sub);
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.serves h2 {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 70px;
+    color: var(--sub);
+    text-transform: capitalize;
+    font-size: 30px;
+    padding: 5px 10px;
+    border: 2px solid var(--sub);
+    border-radius: 10px;
+}
+
+.serves .card {
+    margin-top: 50px;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--main);
+    justify-content: space-evenly;
+    color: var(--sub);
+}
+
+.serves .card .serv:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--trans);
+    border: 1px solid var(--sub);
+}
+
+.serves .card img {
+    height: 300px;
+}
+
+.serves .card .serv {
+    padding: 30px;
+    display: grid;
+    gap: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid var(--sub);
+}
+
+.serves .card .serv:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--trans);
+    border: 1px solid var(--main);
+}
+
+.serves .card .serv h3 {
+    box-shadow: 0 0 3px var(--sub);
+    font-size: 16px;
+    padding: 5px;
+    width: 160px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.serves button {
+    display: inline-block;
+    width: 160px;
+    color: var(--main);
+    border: 2px solid var(--sub);
+    padding: 8px;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: var(--sub);
+}
+
+.serves button:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.projects {
+    background-color: var(--sub);
+    position: relative;
+}
+
+.projects .project {
+    color: var(--main);
+    background-color: var(--main);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.projects h2 {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 70px;
+    color: var(--main);
+    text-transform: capitalize;
+    font-size: 30px;
+    padding: 5px 10px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+
+
+@media (max-width:767px) {
+    .serves .card {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .serves .card img {
+        height: 200px;
+    }
+    .serves .card .serv {
+        margin-top: 30px;
+    }
+    .projects .project:first-of-type {
+        margin-top: 100px;
+    }
+    .projects .project {
+        margin-bottom: 30px;
+    }
+    .projects .project img {
+        width: 250px;
+        height: 250px;
+    }
+}

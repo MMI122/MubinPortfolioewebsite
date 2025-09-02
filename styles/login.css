@@ -1,0 +1,42 @@
+body {
+    background-color: var(--sub);
+}
+
+.login {
+    background-color: var(--alic);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px var(--trans);
+}
+
+.img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--sub);
+    color: var(--sub);
+}
+
+button {
+    width: 100px;
+    margin: 15px auto 0;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid var(--sub);
+    border-radius: 10px;
+    color: var(--sub);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--sub);
+    color: var(--main);
+}
