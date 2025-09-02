@@ -1,0 +1,169 @@
+<style>
+        /* Background & Overlay (Same as customers.php) */
+        .container {
+            background-image: url("images/customers.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--trans);
+            /* e.g. rgba(0,0,0,0.7) */
+            z-index: -1;
+        }
+
+        .main-text {
+            color: var(--sub) !important;
+            font-size: 2.8em;
+            font-weight: 700;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        /* Timeline Container */
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            width: 100%;
+            margin: 60px auto;
+            padding: 20px 0;
+            z-index: 2;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--main);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 3px;
+        }
+
+        .timeline-item {
+            padding: 15px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background-color: var(--sub);
+            border: 4px solid var(--main);
+            border-radius: 50%;
+            top: 18px;
+            z-index: 1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .left::before {
+            right: -12px;
+        }
+
+        .right::before {
+            left: -12px;
+        }
+
+        .content {
+            padding: 24px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid var(--main);
+            transition: transform 0.3s;
+        }
+
+        .content:hover {
+            transform: translateY(-5px);
+        }
+
+        .content h3 {
+            margin: 0 0 10px;
+            color: #333;
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+
+        .content .institution {
+            font-weight: 700;
+            color: #d32f2f !important;
+            /* Material Red 700 - bold but clean */
+            font-size: 1.15em;
+            letter-spacing: 0.3px;
+            margin: 10px 0 8px;
+            display: block;
+            opacity: 1 !important;
+            filter: none !important;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Red icon too for consistency */
+        .content .institution::before {
+            content: "🎓 ";
+            color: #c62828 !important;
+            /* Slightly darker red for icon */
+            font-size: 1.2em;
+            vertical-align: middle;
+        }
+
+        .content .year {
+            font-size: 0.95em;
+            color: #007BFF;
+            margin: 8px 0;
+        }
+
+        .content p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Responsive: Stack on small screens */
+        @media (max-width: 768px) {
+            .timeline::after {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 20px;
+            }
+
+            .left,
+            .right {
+                left: 0;
+            }
+
+            .left::before,
+            .right::before {
+                left: 12px !important;
+                right: auto;
+            }
+        }
+    </style>
